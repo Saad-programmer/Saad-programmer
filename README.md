@@ -74,6 +74,11 @@ int main(void) {
 <sub>🔄 Auto-generated from my GitHub account every 6 hours.</sub>
 
 <!--START_STATS-->
+<div align="center">
+
+<img src="https://img.shields.io/badge/Public%20Repos-96-8B5CF6?style=for-the-badge&labelColor=0D1117" alt="Public Repos"/> <img src="https://img.shields.io/badge/C%20/%20C++%20Repos-22-00599C?style=for-the-badge&labelColor=0D1117" alt="C / C++ Repos"/> <img src="https://img.shields.io/badge/Systems%20Code-49%-EC4899?style=for-the-badge&labelColor=0D1117" alt="Systems Code"/> <img src="https://img.shields.io/badge/Main%20Language-C-22C55E?style=for-the-badge&labelColor=0D1117" alt="Main Language"/> <img src="https://img.shields.io/badge/Stars-3-F59E0B?style=for-the-badge&labelColor=0D1117" alt="Stars"/>
+
+</div>
 <!--END_STATS-->
 
 ---
@@ -83,6 +88,18 @@ int main(void) {
 <sub>🔄 Ranked by number of repositories, systems languages first. CSS and HTML are not counted as a main language.</sub>
 
 <!--START_FOCUS-->
+| Language | Repos | Share | |
+|---|---:|---:|---|
+| **C** ⚙️ | 16 | 29% | `██████████████████` |
+| **C++** ⚙️ | 6 | 11% | `███████░░░░░░░░░░░` |
+| **Assembly** ⚙️ | 2 | 4% | `██░░░░░░░░░░░░░░░░` |
+| **Makefile** ⚙️ | 2 | 4% | `██░░░░░░░░░░░░░░░░` |
+| **Go** ⚙️ | 1 | 2% | `█░░░░░░░░░░░░░░░░░` |
+| **JavaScript** | 16 | 29% | `██████████████████` |
+| **TypeScript** | 7 | 13% | `████████░░░░░░░░░░` |
+| **PHP** | 3 | 5% | `███░░░░░░░░░░░░░░░` |
+
+<sub>⚙️ = systems / low-level language. Ranked by number of repositories; CSS and HTML are excluded on purpose.</sub>
 <!--END_FOCUS-->
 
 ---
@@ -92,6 +109,17 @@ int main(void) {
 <sub>🔄 Detected automatically from my repositories.</sub>
 
 <!--START_TECH-->
+<div align="center">
+
+**⚙️ Systems & low-level core**
+
+<img src="https://skillicons.dev/icons?i=cmake,c,cpp,asm,bash,linux,git&perline=8" alt="systems"/>
+
+**🧰 Also work with**
+
+<img src="https://skillicons.dev/icons?i=js,ts,py&perline=8" alt="other"/>
+
+</div>
 <!--END_TECH-->
 
 ---
@@ -101,6 +129,16 @@ int main(void) {
 <sub>🔄 Picked automatically: C and C++ projects are ranked first, personal websites are skipped.</sub>
 
 <!--START_PROJECTS-->
+<div align="center">
+
+<a href="https://github.com/Saad-programmer/AquariumGTK"><img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=Saad-programmer&repo=AquariumGTK&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=EC4899" alt="AquariumGTK"/></a>
+<a href="https://github.com/Saad-programmer/GTK-Bekhocha"><img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=Saad-programmer&repo=GTK-Bekhocha&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=EC4899" alt="GTK-Bekhocha"/></a>
+<a href="https://github.com/Saad-programmer/GtkFunctions"><img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=Saad-programmer&repo=GtkFunctions&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=EC4899" alt="GtkFunctions"/></a>
+<a href="https://github.com/Saad-programmer/GTKFinalVers"><img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=Saad-programmer&repo=GTKFinalVers&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=EC4899" alt="GTKFinalVers"/></a>
+<a href="https://github.com/Saad-programmer/TRackRS"><img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=Saad-programmer&repo=TRackRS&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=EC4899" alt="TRackRS"/></a>
+<a href="https://github.com/Saad-programmer/std-LIST-std-VECTOR"><img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=Saad-programmer&repo=std-LIST-std-VECTOR&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=EC4899" alt="std-LIST-std-VECTOR"/></a>
+
+</div>
 <!--END_PROJECTS-->
 
 ---
@@ -108,6 +146,13 @@ int main(void) {
 ## 🕒 &nbsp;Recently Updated
 
 <!--START_RECENT-->
+| Repository | Description | Language | ⭐ | Updated |
+|---|---|---|---|---|
+| [**Saad_AIT_YAHIA**](https://github.com/Saad-programmer/Saad_AIT_YAHIA) | — | CSS | 0 | 2026-10-25 |
+| [**Saad.github.io**](https://github.com/Saad-programmer/Saad.github.io) | — | — | 0 | 2026-10-25 |
+| [**TRackRS**](https://github.com/Saad-programmer/TRackRS) | — | C++ ⚙️ | 0 | 2026-10-24 |
+| [**GTK-Bekhocha**](https://github.com/Saad-programmer/GTK-Bekhocha) | — | C ⚙️ | 1 | 2026-10-23 |
+| [**std-LIST-std-VECTOR**](https://github.com/Saad-programmer/std-LIST-std-VECTOR) | — | C++ ⚙️ | 0 | 2026-10-23 |
 <!--END_RECENT-->
 
 ---
@@ -115,6 +160,12 @@ int main(void) {
 ## ⚡ &nbsp;Latest Activity
 
 <!--START_ACTIVITY-->
+- ⬆️ Pushed 1+ commit(s) to [Saad-programmer/Saad_AIT_YAHIA](https://github.com/Saad-programmer/Saad_AIT_YAHIA) · `2026-10-25`
+- ⬆️ Pushed 1+ commit(s) to [Saad-programmer/Saad-programmer](https://github.com/Saad-programmer/Saad-programmer) · `2026-10-25`
+- ⬆️ Pushed 1+ commit(s) to [Saad-programmer/TRackRS](https://github.com/Saad-programmer/TRackRS) · `2026-10-24`
+- ⬆️ Pushed 1+ commit(s) to [Saad-programmer/TRackRS](https://github.com/Saad-programmer/TRackRS) · `2026-10-23`
+- ⬆️ Pushed 1+ commit(s) to [Saad-programmer/GTK-Bekhocha](https://github.com/Saad-programmer/GTK-Bekhocha) · `2026-10-23`
+- ⬆️ Pushed 1+ commit(s) to [Saad-programmer/List-Vector](https://github.com/Saad-programmer/List-Vector) · `2026-10-22`
 <!--END_ACTIVITY-->
 
 ---
