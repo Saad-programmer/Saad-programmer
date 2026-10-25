@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
 """
-Reads the owner's public GitHub data (repos, languages, topics, events)
-and rewrites the dynamic sections of README.md between the markers:
+Reads the owner's public GitHub data and rewrites the dynamic sections of
+README.md between these markers:
 
-    <!--START_STATS--> ... <!--END_STATS-->
-    <!--START_TECH-->  ... <!--END_TECH-->
-    <!--START_PROJECTS--> ... <!--END_PROJECTS-->
-    <!--START_RECENT-->   ... <!--END_RECENT-->
-    <!--START_ACTIVITY--> ... <!--END_ACTIVITY-->
+    STATS     badges (repos, stars, C/C++ repos, systems share)
+    FOCUS     language focus bars, ranked by number of repos, systems first
+    TECH      icon rows: systems core + other tools
+    PROJECTS  featured repos, systems projects (C / C++ / ASM / Rust) first
+    RECENT    most recently pushed repos
+    ACTIVITY  latest public events
 
-Standard library only. Runs inside GitHub Actions with the default GITHUB_TOKEN.
+Web markup languages (CSS, HTML, SCSS) are deliberately NOT counted as a
+"main language": they describe pages, not engineering depth. Standard library
+only. Runs inside GitHub Actions with the default GITHUB_TOKEN.
 """
 import json
 import os
@@ -25,33 +28,46 @@ MAX_PROJECTS = 6
 MAX_RECENT = 5
 MAX_EVENTS = 6
 
-# GitHub language name -> skillicons.dev id
+# Languages that count as "systems engineering" work.
+SYSTEMS_LANGS = {"C", "C++", "Assembly", "Rust", "Makefile", "CMake", "Shell", "Go", "Zig"}
+# Languages ignored when picking a "main" language (markup / styling only).
+IGNORED_LANGS = {"CSS", "HTML", "SCSS", "Sass", "Less"}
+# Repo names that are websites, not projects to feature.
+SKIP_FEATURED = re.compile(r"(\.github\.io$|^portfolio$)", re.I)
+
 LANG_ICONS = {
-    "JavaScript": "js", "TypeScript": "ts", "Python": "py", "Java": "java",
-    "C": "c", "C++": "cpp", "C#": "cs", "PHP": "php", "HTML": "html",
-    "CSS": "css", "SCSS": "sass", "Shell": "bash", "Go": "go", "Rust": "rust",
-    "Kotlin": "kotlin", "Dart": "dart", "Vue": "vue", "Swift": "swift",
-    "Ruby": "ruby", "Lua": "lua", "Dockerfile": "docker", "PLpgSQL": "postgres",
-    "Svelte": "svelte", "R": "r", "MATLAB": "matlab", "Assembly": "asm",
+    "C": "c", "C++": "cpp", "Assembly": "asm", "Rust": "rust", "Go": "go",
+    "Shell": "bash", "CMake": "cmake", "Python": "py", "Java": "java",
+    "C#": "cs", "JavaScript": "js", "TypeScript": "ts", "PHP": "php",
+    "Kotlin": "kotlin", "Dart": "dart", "Lua": "lua", "Swift": "swift",
+    "Dockerfile": "docker", "Makefile": "cmake", "HTML": "html", "CSS": "css",
 }
 
-# repo topic -> skillicons.dev id
+# repo topic -> skillicons.dev id (systems-leaning tools first in the file)
 TOPIC_ICONS = {
-    "react": "react", "reactjs": "react", "nextjs": "next", "next-js": "next",
-    "nodejs": "nodejs", "node": "nodejs", "express": "express", "expressjs": "express",
-    "tailwindcss": "tailwind", "tailwind": "tailwind", "bootstrap": "bootstrap",
-    "docker": "docker", "kubernetes": "kubernetes", "mongodb": "mongodb",
-    "mysql": "mysql", "postgresql": "postgres", "postgres": "postgres",
-    "redis": "redis", "firebase": "firebase", "flutter": "flutter",
-    "laravel": "laravel", "django": "django", "flask": "flask",
-    "fastapi": "fastapi", "spring": "spring", "spring-boot": "spring",
-    "springboot": "spring", "angular": "angular", "vue": "vue", "vuejs": "vue",
-    "svelte": "svelte", "nestjs": "nestjs", "git": "git", "linux": "linux",
-    "figma": "figma", "tensorflow": "tensorflow", "pytorch": "pytorch",
-    "opencv": "opencv", "vite": "vite", "sass": "sass", "graphql": "graphql",
-    "aws": "aws", "azure": "azure", "githubactions": "githubactions",
-    "github-actions": "githubactions", "nginx": "nginx", "sqlite": "sqlite",
-    "unity": "unity", "dotnet": "dotnet", "arduino": "arduino", "jquery": "jquery",
+    "linux": "linux", "cmake": "cmake", "makefile": "cmake", "gdb": "gdb",
+    "vim": "vim", "neovim": "neovim", "arduino": "arduino",
+    "raspberry-pi": "raspberrypi", "raspberrypi": "raspberrypi",
+    "git": "git", "docker": "docker", "kubernetes": "kubernetes",
+    "nginx": "nginx", "githubactions": "githubactions", "github-actions": "githubactions",
+    "sqlite": "sqlite", "mysql": "mysql", "postgresql": "postgres", "postgres": "postgres",
+    "redis": "redis", "mongodb": "mongodb", "opencv": "opencv",
+    "tensorflow": "tensorflow", "pytorch": "pytorch", "qt": "qt",
+    "react": "react", "nodejs": "nodejs", "django": "django", "flask": "flask",
+    "fastapi": "fastapi", "spring-boot": "spring", "springboot": "spring",
+    "flutter": "flutter", "unity": "unity", "aws": "aws", "azure": "azure",
+}
+
+# Topics worth showing as text chips because skillicons has no icon for them.
+TEXT_TOPICS = {
+    "gtk": "GTK", "gtk3": "GTK3", "gtk4": "GTK4", "sdl": "SDL", "sdl2": "SDL2",
+    "opengl": "OpenGL", "vulkan": "Vulkan", "posix": "POSIX", "sockets": "Sockets",
+    "multithreading": "Multithreading", "pthreads": "pthreads", "stl": "STL",
+    "data-structures": "Data Structures", "algorithms": "Algorithms",
+    "operating-system": "Operating Systems", "os": "Operating Systems",
+    "networking": "Networking", "memory-management": "Memory Management",
+    "embedded": "Embedded", "kernel": "Kernel", "compiler": "Compilers",
+    "ncurses": "ncurses", "valgrind": "Valgrind",
 }
 
 
@@ -86,9 +102,7 @@ def all_repos():
 
 
 def replace(text, name, content):
-    pattern = re.compile(
-        rf"(<!--START_{name}-->).*?(<!--END_{name}-->)", re.DOTALL
-    )
+    pattern = re.compile(rf"(<!--START_{name}-->).*?(<!--END_{name}-->)", re.DOTALL)
     if not pattern.search(text):
         print(f"! marker {name} not found, skipped")
         return text
@@ -96,87 +110,144 @@ def replace(text, name, content):
 
 
 def badge(label, value, color):
-    label = label.replace("-", "--").replace(" ", "%20")
-    value = str(value).replace("-", "--").replace(" ", "%20")
+    def esc(s):
+        return str(s).replace("-", "--").replace("_", "__").replace(" ", "%20")
     return (
-        f'<img src="https://img.shields.io/badge/{label}-{value}-{color}'
+        f'<img src="https://img.shields.io/badge/{esc(label)}-{esc(value)}-{color}'
         f'?style=for-the-badge&labelColor=0D1117" alt="{label}"/>'
     )
 
 
+def repo_lang(r):
+    lang = r.get("language")
+    return lang if lang and lang not in IGNORED_LANGS else None
+
+
+def lang_counts(repos):
+    return Counter(repo_lang(r) for r in repos if repo_lang(r))
+
+
 def build_stats(repos):
+    langs = lang_counts(repos)
     stars = sum(r["stargazers_count"] for r in repos)
-    forks = sum(r["forks_count"] for r in repos)
-    langs = Counter(r["language"] for r in repos if r["language"])
+    c_cpp = langs.get("C", 0) + langs.get("C++", 0)
+    systems = sum(n for l, n in langs.items() if l in SYSTEMS_LANGS)
+    total = sum(langs.values()) or 1
     top = langs.most_common(1)[0][0] if langs else "N/A"
     return (
         '<div align="center">\n\n'
         + " ".join([
             badge("Public Repos", len(repos), "8B5CF6"),
-            badge("Total Stars", stars, "EC4899"),
-            badge("Total Forks", forks, "06B6D4"),
-            badge("Top Language", top, "22C55E"),
+            badge("C / C++ Repos", c_cpp, "00599C"),
+            badge("Systems Code", f"{round(100 * systems / total)}%", "EC4899"),
+            badge("Main Language", top, "22C55E"),
+            badge("Stars", stars, "F59E0B"),
         ])
         + "\n\n</div>"
     )
 
 
+def build_focus(repos):
+    langs = lang_counts(repos)
+    if not langs:
+        return "_Language data will appear here automatically._"
+    total = sum(langs.values())
+    ordered = sorted(
+        langs.items(),
+        key=lambda kv: (kv[0] not in SYSTEMS_LANGS, -kv[1]),
+    )[:8]
+    top_n = max(n for _, n in ordered)
+    rows = ["| Language | Repos | Share | |", "|---|---:|---:|---|"]
+    for lang, n in ordered:
+        filled = max(1, round(18 * n / top_n))
+        bar = "█" * filled + "░" * (18 - filled)
+        tag = " ⚙️" if lang in SYSTEMS_LANGS else ""
+        rows.append(f"| **{lang}**{tag} | {n} | {round(100 * n / total)}% | `{bar}` |")
+    rows.append("")
+    rows.append("<sub>⚙️ = systems / low-level language. Ranked by number of repositories; CSS and HTML are excluded on purpose.</sub>")
+    return "\n".join(rows)
+
+
 def build_tech(repos):
     bytes_by_lang = Counter()
-    for r in repos[:40]:
+    for r in repos[:50]:
         try:
             for lang, size in api(r["languages_url"]).items():
                 bytes_by_lang[lang] += size
         except Exception as exc:  # noqa: BLE001
             print(f"! languages failed for {r['name']}: {exc}")
 
-    langs = [l for l, _ in bytes_by_lang.most_common(14)]
-    lang_icons = []
-    for l in langs:
-        icon = LANG_ICONS.get(l)
-        if icon and icon not in lang_icons:
-            lang_icons.append(icon)
+    core, other = [], []
+    for lang, _ in bytes_by_lang.most_common():
+        if lang in IGNORED_LANGS:
+            continue
+        icon = LANG_ICONS.get(lang)
+        if not icon:
+            continue
+        target = core if lang in SYSTEMS_LANGS else other
+        if icon not in core and icon not in other:
+            target.append(icon)
 
-    topics = Counter(t for r in repos for t in r.get("topics", []))
-    tool_icons = []
+    topics = Counter(t.lower() for r in repos for t in r.get("topics", []))
+    chips = []
     for t, _ in topics.most_common():
-        icon = TOPIC_ICONS.get(t.lower())
-        if icon and icon not in tool_icons and icon not in lang_icons:
-            tool_icons.append(icon)
+        icon = TOPIC_ICONS.get(t)
+        if icon and icon not in core and icon not in other:
+            (core if icon in {"linux", "cmake", "gdb", "vim", "neovim", "arduino", "raspberrypi", "git", "qt"} else other).append(icon)
+        if t in TEXT_TOPICS and TEXT_TOPICS[t] not in chips:
+            chips.append(TEXT_TOPICS[t])
+
+    # Always-true basics for a C/C++ systems profile if repos prove the languages.
+    for base in ("linux", "git"):
+        if core and base not in core:
+            core.append(base)
 
     out = ['<div align="center">\n']
-    if lang_icons:
-        out.append("**Languages (from my repos)**\n")
-        out.append(
-            f'<img src="https://skillicons.dev/icons?i={",".join(lang_icons)}'
-            f'&perline=8" alt="languages"/>\n'
-        )
-    if tool_icons:
-        out.append("**Frameworks & tools (from repo topics)**\n")
-        out.append(
-            f'<img src="https://skillicons.dev/icons?i={",".join(tool_icons)}'
-            f'&perline=8" alt="tools"/>\n'
-        )
-    if not lang_icons and not tool_icons:
+    if core:
+        out.append("**⚙️ Systems & low-level core**\n")
+        out.append(f'<img src="https://skillicons.dev/icons?i={",".join(core)}&perline=8" alt="systems"/>\n')
+    if chips:
+        out.append(" ".join(
+            f'<img src="https://img.shields.io/badge/{c.replace(" ", "%20")}-0D1117?style=flat-square&labelColor=0D1117&color=8B5CF6" alt="{c}"/>'
+            for c in chips
+        ) + "\n")
+    if other:
+        out.append("**🧰 Also work with**\n")
+        out.append(f'<img src="https://skillicons.dev/icons?i={",".join(other)}&perline=8" alt="other"/>\n')
+    if not core and not other:
         out.append("_Push some code and this section fills itself in._\n")
     out.append("</div>")
     return "\n".join(out)
 
 
+def project_score(r):
+    score = r["stargazers_count"] * 10 + r["forks_count"] * 5
+    lang = r.get("language")
+    if lang in SYSTEMS_LANGS:
+        score += 50
+    if lang in ("C", "C++"):
+        score += 25
+    if r.get("description"):
+        score += 5
+    return (score, r["pushed_at"])
+
+
 def build_projects(repos):
-    ranked = sorted(
-        repos, key=lambda r: (r["stargazers_count"], r["pushed_at"]), reverse=True
-    )[:MAX_PROJECTS]
+    pool = [
+        r for r in repos
+        if not SKIP_FEATURED.search(r["name"]) and r.get("language") not in IGNORED_LANGS
+        and r.get("language")
+    ]
+    ranked = sorted(pool, key=project_score, reverse=True)[:MAX_PROJECTS]
     if not ranked:
         return "_No public projects yet. They'll appear here automatically._"
-    cards = []
-    for r in ranked:
-        cards.append(
-            f'<a href="{r["html_url"]}"><img width="48%" '
-            f'src="https://github-readme-stats.vercel.app/api/pin/?username={USER}'
-            f'&repo={r["name"]}&theme=tokyonight&hide_border=true&bg_color=0D1117'
-            f'&title_color=A78BFA&icon_color=EC4899" alt="{r["name"]}"/></a>'
-        )
+    cards = [
+        f'<a href="{r["html_url"]}"><img width="48%" '
+        f'src="https://github-readme-stats.vercel.app/api/pin/?username={USER}'
+        f'&repo={r["name"]}&theme=tokyonight&hide_border=true&bg_color=0D1117'
+        f'&title_color=A78BFA&icon_color=EC4899" alt="{r["name"]}"/></a>'
+        for r in ranked
+    ]
     return '<div align="center">\n\n' + "\n".join(cards) + "\n\n</div>"
 
 
@@ -188,28 +259,36 @@ def build_recent(repos):
             "|---|---|---|---|---|"]
     for r in recent:
         desc = (r["description"] or "—").replace("|", "\\|")
+        lang = r["language"] or "—"
+        if lang in SYSTEMS_LANGS:
+            lang += " ⚙️"
         rows.append(
-            f'| [**{r["name"]}**]({r["html_url"]}) | {desc} | '
-            f'{r["language"] or "—"} | {r["stargazers_count"]} | {r["pushed_at"][:10]} |'
+            f'| [**{r["name"]}**]({r["html_url"]}) | {desc} | {lang} | '
+            f'{r["stargazers_count"]} | {r["pushed_at"][:10]} |'
         )
     return "\n".join(rows)
 
 
 def build_activity():
     try:
-        events = api(f"https://api.github.com/users/{USER}/events/public?per_page=50")
+        events = api(f"https://api.github.com/users/{USER}/events/public?per_page=100")
     except Exception as exc:  # noqa: BLE001
         print(f"! events failed: {exc}")
         return "_Activity unavailable right now._"
 
-    lines = []
+    lines, seen = [], set()
     for e in events:
         repo = e["repo"]["name"]
         link = f"[{repo}](https://github.com/{repo})"
         day = e["created_at"][:10]
         t, p = e["type"], e.get("payload", {})
         if t == "PushEvent":
-            lines.append(f"- ⬆️ Pushed code to {link} · `{day}`")
+            n = len(p.get("commits", [])) or 1
+            key = ("push", repo, day)
+            if key in seen:
+                continue
+            seen.add(key)
+            lines.append(f"- ⬆️ Pushed {n}+ commit(s) to {link} · `{day}`")
         elif t == "CreateEvent" and p.get("ref_type") == "repository":
             lines.append(f"- 🆕 Created repository {link} · `{day}`")
         elif t == "PullRequestEvent":
@@ -231,6 +310,7 @@ def main():
 
     text = README.read_text(encoding="utf-8")
     text = replace(text, "STATS", build_stats(repos))
+    text = replace(text, "FOCUS", build_focus(repos))
     text = replace(text, "TECH", build_tech(repos))
     text = replace(text, "PROJECTS", build_projects(repos))
     text = replace(text, "RECENT", build_recent(repos))
