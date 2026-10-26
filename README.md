@@ -76,7 +76,7 @@ int main(void) {
 <!--START_STATS-->
 <div align="center">
 
-<img src="https://img.shields.io/badge/Public%20Repos-96-8B5CF6?style=for-the-badge&labelColor=0D1117" alt="Public Repos"/> <img src="https://img.shields.io/badge/C%20/%20C++%20Repos-22-00599C?style=for-the-badge&labelColor=0D1117" alt="C / C++ Repos"/> <img src="https://img.shields.io/badge/Systems%20Code-49%-EC4899?style=for-the-badge&labelColor=0D1117" alt="Systems Code"/> <img src="https://img.shields.io/badge/Main%20Language-C-22C55E?style=for-the-badge&labelColor=0D1117" alt="Main Language"/> <img src="https://img.shields.io/badge/Stars-3-F59E0B?style=for-the-badge&labelColor=0D1117" alt="Stars"/>
+<img src="https://img.shields.io/badge/Public%20Repos-97-8B5CF6?style=for-the-badge&labelColor=0D1117" alt="Public Repos"/> <img src="https://img.shields.io/badge/C%20/%20C++%20Repos-22-00599C?style=for-the-badge&labelColor=0D1117" alt="C / C++ Repos"/> <img src="https://img.shields.io/badge/Systems%20Code-48%-EC4899?style=for-the-badge&labelColor=0D1117" alt="Systems Code"/> <img src="https://img.shields.io/badge/Main%20Language-C-22C55E?style=for-the-badge&labelColor=0D1117" alt="Main Language"/> <img src="https://img.shields.io/badge/Stars-3-F59E0B?style=for-the-badge&labelColor=0D1117" alt="Stars"/>
 
 </div>
 <!--END_STATS-->
@@ -96,7 +96,7 @@ int main(void) {
 | **Makefile** ⚙️ | 2 | 4% | `██░░░░░░░░░░░░░░░░` |
 | **Go** ⚙️ | 1 | 2% | `█░░░░░░░░░░░░░░░░░` |
 | **JavaScript** | 16 | 29% | `██████████████████` |
-| **TypeScript** | 7 | 13% | `████████░░░░░░░░░░` |
+| **TypeScript** | 8 | 14% | `█████████░░░░░░░░░` |
 | **PHP** | 3 | 5% | `███░░░░░░░░░░░░░░░` |
 
 <sub>⚙️ = systems / low-level language. Ranked by number of repositories; CSS and HTML are excluded on purpose.</sub>
@@ -148,11 +148,11 @@ int main(void) {
 <!--START_RECENT-->
 | Repository | Description | Language | ⭐ | Updated |
 |---|---|---|---|---|
+| [**Saad_AIT_YAHIA27**](https://github.com/Saad-programmer/Saad_AIT_YAHIA27) | — | TypeScript | 0 | 2026-10-26 |
 | [**Saad_AIT_YAHIA**](https://github.com/Saad-programmer/Saad_AIT_YAHIA) | — | CSS | 0 | 2026-10-25 |
 | [**Saad.github.io**](https://github.com/Saad-programmer/Saad.github.io) | — | — | 0 | 2026-10-25 |
 | [**TRackRS**](https://github.com/Saad-programmer/TRackRS) | — | C++ ⚙️ | 0 | 2026-10-24 |
 | [**GTK-Bekhocha**](https://github.com/Saad-programmer/GTK-Bekhocha) | — | C ⚙️ | 1 | 2026-10-23 |
-| [**std-LIST-std-VECTOR**](https://github.com/Saad-programmer/std-LIST-std-VECTOR) | — | C++ ⚙️ | 0 | 2026-10-23 |
 <!--END_RECENT-->
 
 ---
