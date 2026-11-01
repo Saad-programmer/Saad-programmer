@@ -76,7 +76,7 @@ int main(void) {
 <!--START_STATS-->
 <div align="center">
 
-<img src="https://img.shields.io/badge/Public%20Repos-99-8B5CF6?style=for-the-badge&labelColor=0D1117" alt="Public Repos"/> <img src="https://img.shields.io/badge/C%20/%20C++%20Repos-24-00599C?style=for-the-badge&labelColor=0D1117" alt="C / C++ Repos"/> <img src="https://img.shields.io/badge/Systems%20Code-50%-EC4899?style=for-the-badge&labelColor=0D1117" alt="Systems Code"/> <img src="https://img.shields.io/badge/Main%20Language-C-22C55E?style=for-the-badge&labelColor=0D1117" alt="Main Language"/> <img src="https://img.shields.io/badge/Stars-3-F59E0B?style=for-the-badge&labelColor=0D1117" alt="Stars"/>
+<img src="https://img.shields.io/badge/Public%20Repos-100-8B5CF6?style=for-the-badge&labelColor=0D1117" alt="Public Repos"/> <img src="https://img.shields.io/badge/C%20/%20C++%20Repos-25-00599C?style=for-the-badge&labelColor=0D1117" alt="C / C++ Repos"/> <img src="https://img.shields.io/badge/Systems%20Code-51%-EC4899?style=for-the-badge&labelColor=0D1117" alt="Systems Code"/> <img src="https://img.shields.io/badge/Main%20Language-C-22C55E?style=for-the-badge&labelColor=0D1117" alt="Main Language"/> <img src="https://img.shields.io/badge/Stars-3-F59E0B?style=for-the-badge&labelColor=0D1117" alt="Stars"/>
 
 </div>
 <!--END_STATS-->
@@ -90,12 +90,12 @@ int main(void) {
 <!--START_FOCUS-->
 | Language | Repos | Share | |
 |---|---:|---:|---|
-| **C** ⚙️ | 16 | 28% | `██████████████████` |
-| **C++** ⚙️ | 8 | 14% | `█████████░░░░░░░░░` |
+| **C** ⚙️ | 16 | 27% | `██████████████████` |
+| **C++** ⚙️ | 9 | 15% | `██████████░░░░░░░░` |
 | **Assembly** ⚙️ | 2 | 3% | `██░░░░░░░░░░░░░░░░` |
 | **Makefile** ⚙️ | 2 | 3% | `██░░░░░░░░░░░░░░░░` |
 | **Go** ⚙️ | 1 | 2% | `█░░░░░░░░░░░░░░░░░` |
-| **JavaScript** | 16 | 28% | `██████████████████` |
+| **JavaScript** | 16 | 27% | `██████████████████` |
 | **TypeScript** | 8 | 14% | `█████████░░░░░░░░░` |
 | **PHP** | 3 | 5% | `███░░░░░░░░░░░░░░░` |
 
@@ -135,8 +135,8 @@ int main(void) {
 <a href="https://github.com/Saad-programmer/GTK-Bekhocha"><img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=Saad-programmer&repo=GTK-Bekhocha&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=EC4899" alt="GTK-Bekhocha"/></a>
 <a href="https://github.com/Saad-programmer/GtkFunctions"><img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=Saad-programmer&repo=GtkFunctions&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=EC4899" alt="GtkFunctions"/></a>
 <a href="https://github.com/Saad-programmer/GTKFinalVers"><img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=Saad-programmer&repo=GTKFinalVers&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=EC4899" alt="GTKFinalVers"/></a>
+<a href="https://github.com/Saad-programmer/MinTas"><img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=Saad-programmer&repo=MinTas&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=EC4899" alt="MinTas"/></a>
 <a href="https://github.com/Saad-programmer/maxTAS"><img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=Saad-programmer&repo=maxTAS&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=EC4899" alt="maxTAS"/></a>
-<a href="https://github.com/Saad-programmer/ArbreRechercheBinaire_Heap"><img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=Saad-programmer&repo=ArbreRechercheBinaire_Heap&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=EC4899" alt="ArbreRechercheBinaire_Heap"/></a>
 
 </div>
 <!--END_PROJECTS-->
@@ -148,11 +148,11 @@ int main(void) {
 <!--START_RECENT-->
 | Repository | Description | Language | ⭐ | Updated |
 |---|---|---|---|---|
+| [**MinTas**](https://github.com/Saad-programmer/MinTas) | — | C++ ⚙️ | 0 | 2026-10-31 |
 | [**maxTAS**](https://github.com/Saad-programmer/maxTAS) | — | C++ ⚙️ | 0 | 2026-10-31 |
 | [**ArbreRechercheBinaire_Heap**](https://github.com/Saad-programmer/ArbreRechercheBinaire_Heap) | — | C++ ⚙️ | 0 | 2026-10-28 |
 | [**Saad_AIT_YAHIA27**](https://github.com/Saad-programmer/Saad_AIT_YAHIA27) | — | TypeScript | 0 | 2026-10-26 |
 | [**Saad_AIT_YAHIA**](https://github.com/Saad-programmer/Saad_AIT_YAHIA) | — | CSS | 0 | 2026-10-25 |
-| [**Saad.github.io**](https://github.com/Saad-programmer/Saad.github.io) | — | — | 0 | 2026-10-25 |
 <!--END_RECENT-->
 
 ---
