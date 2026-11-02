@@ -148,7 +148,7 @@ int main(void) {
 <!--START_RECENT-->
 | Repository | Description | Language | ⭐ | Updated |
 |---|---|---|---|---|
-| [**TRackRS**](https://github.com/Saad-programmer/TRackRS) | — | C++ ⚙️ | 0 | 2026-11-01 |
+| [**TRackRS**](https://github.com/Saad-programmer/TRackRS) | — | C++ ⚙️ | 0 | 2026-11-02 |
 | [**MinTas**](https://github.com/Saad-programmer/MinTas) | — | C++ ⚙️ | 0 | 2026-10-31 |
 | [**maxTAS**](https://github.com/Saad-programmer/maxTAS) | — | C++ ⚙️ | 0 | 2026-10-31 |
 | [**ArbreRechercheBinaire_Heap**](https://github.com/Saad-programmer/ArbreRechercheBinaire_Heap) | — | C++ ⚙️ | 0 | 2026-10-28 |
@@ -160,12 +160,12 @@ int main(void) {
 ## ⚡ &nbsp;Latest Activity
 
 <!--START_ACTIVITY-->
+- ⬆️ Pushed 1+ commit(s) to [Saad-programmer/MinTas](https://github.com/Saad-programmer/MinTas) · `2026-10-31`
 - ⬆️ Pushed 1+ commit(s) to [Saad-programmer/ArbreRechercheBinaire_Heap](https://github.com/Saad-programmer/ArbreRechercheBinaire_Heap) · `2026-10-28`
 - ⬆️ Pushed 1+ commit(s) to [Saad-programmer/Saad-programmer](https://github.com/Saad-programmer/Saad-programmer) · `2026-10-25`
 - ⬆️ Pushed 1+ commit(s) to [Saad-programmer/Saad.github.io](https://github.com/Saad-programmer/Saad.github.io) · `2026-10-25`
 - ⬆️ Pushed 1+ commit(s) to [Saad-programmer/Saad_AIT_YAHIA](https://github.com/Saad-programmer/Saad_AIT_YAHIA) · `2026-10-25`
 - ⬆️ Pushed 1+ commit(s) to [Saad-programmer/TRackRS](https://github.com/Saad-programmer/TRackRS) · `2026-10-24`
-- ⬆️ Pushed 1+ commit(s) to [Saad-programmer/TRackRS](https://github.com/Saad-programmer/TRackRS) · `2026-10-23`
 <!--END_ACTIVITY-->
 
 ---
