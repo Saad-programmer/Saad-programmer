@@ -76,7 +76,7 @@ int main(void) {
 <!--START_STATS-->
 <div align="center">
 
-<img src="https://img.shields.io/badge/Public%20Repos-100-8B5CF6?style=for-the-badge&labelColor=0D1117" alt="Public Repos"/> <img src="https://img.shields.io/badge/C%20/%20C++%20Repos-25-00599C?style=for-the-badge&labelColor=0D1117" alt="C / C++ Repos"/> <img src="https://img.shields.io/badge/Systems%20Code-51%-EC4899?style=for-the-badge&labelColor=0D1117" alt="Systems Code"/> <img src="https://img.shields.io/badge/Main%20Language-C-22C55E?style=for-the-badge&labelColor=0D1117" alt="Main Language"/> <img src="https://img.shields.io/badge/Stars-3-F59E0B?style=for-the-badge&labelColor=0D1117" alt="Stars"/>
+<img src="https://img.shields.io/badge/Public%20Repos-100-8B5CF6?style=for-the-badge&labelColor=0D1117" alt="Public Repos"/> <img src="https://img.shields.io/badge/C%20/%20C++%20Repos-25-00599C?style=for-the-badge&labelColor=0D1117" alt="C / C++ Repos"/> <img src="https://img.shields.io/badge/Systems%20Code-50%-EC4899?style=for-the-badge&labelColor=0D1117" alt="Systems Code"/> <img src="https://img.shields.io/badge/Main%20Language-C-22C55E?style=for-the-badge&labelColor=0D1117" alt="Main Language"/> <img src="https://img.shields.io/badge/Stars-3-F59E0B?style=for-the-badge&labelColor=0D1117" alt="Stars"/>
 
 </div>
 <!--END_STATS-->
@@ -96,7 +96,7 @@ int main(void) {
 | **Makefile** ⚙️ | 2 | 3% | `██░░░░░░░░░░░░░░░░` |
 | **Go** ⚙️ | 1 | 2% | `█░░░░░░░░░░░░░░░░░` |
 | **JavaScript** | 16 | 27% | `██████████████████` |
-| **TypeScript** | 8 | 14% | `█████████░░░░░░░░░` |
+| **TypeScript** | 8 | 13% | `█████████░░░░░░░░░` |
 | **PHP** | 3 | 5% | `███░░░░░░░░░░░░░░░` |
 
 <sub>⚙️ = systems / low-level language. Ranked by number of repositories; CSS and HTML are excluded on purpose.</sub>
@@ -148,11 +148,11 @@ int main(void) {
 <!--START_RECENT-->
 | Repository | Description | Language | ⭐ | Updated |
 |---|---|---|---|---|
+| [**TrackRS_Officiel**](https://github.com/Saad-programmer/TrackRS_Officiel) | — | Python | 0 | 2026-11-02 |
 | [**TRackRS**](https://github.com/Saad-programmer/TRackRS) | — | C++ ⚙️ | 0 | 2026-11-02 |
 | [**MinTas**](https://github.com/Saad-programmer/MinTas) | — | C++ ⚙️ | 0 | 2026-10-31 |
 | [**maxTAS**](https://github.com/Saad-programmer/maxTAS) | — | C++ ⚙️ | 0 | 2026-10-31 |
 | [**ArbreRechercheBinaire_Heap**](https://github.com/Saad-programmer/ArbreRechercheBinaire_Heap) | — | C++ ⚙️ | 0 | 2026-10-28 |
-| [**Saad_AIT_YAHIA27**](https://github.com/Saad-programmer/Saad_AIT_YAHIA27) | — | TypeScript | 0 | 2026-10-26 |
 <!--END_RECENT-->
 
 ---
@@ -160,12 +160,12 @@ int main(void) {
 ## ⚡ &nbsp;Latest Activity
 
 <!--START_ACTIVITY-->
+- ⬆️ Pushed 1+ commit(s) to [Saad-programmer/TRackRS](https://github.com/Saad-programmer/TRackRS) · `2026-11-02`
 - ⬆️ Pushed 1+ commit(s) to [Saad-programmer/MinTas](https://github.com/Saad-programmer/MinTas) · `2026-10-31`
 - ⬆️ Pushed 1+ commit(s) to [Saad-programmer/ArbreRechercheBinaire_Heap](https://github.com/Saad-programmer/ArbreRechercheBinaire_Heap) · `2026-10-28`
 - ⬆️ Pushed 1+ commit(s) to [Saad-programmer/Saad-programmer](https://github.com/Saad-programmer/Saad-programmer) · `2026-10-25`
 - ⬆️ Pushed 1+ commit(s) to [Saad-programmer/Saad.github.io](https://github.com/Saad-programmer/Saad.github.io) · `2026-10-25`
 - ⬆️ Pushed 1+ commit(s) to [Saad-programmer/Saad_AIT_YAHIA](https://github.com/Saad-programmer/Saad_AIT_YAHIA) · `2026-10-25`
-- ⬆️ Pushed 1+ commit(s) to [Saad-programmer/TRackRS](https://github.com/Saad-programmer/TRackRS) · `2026-10-24`
 <!--END_ACTIVITY-->
 
 ---
