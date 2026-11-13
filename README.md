@@ -117,7 +117,7 @@ int main(void) {
 
 **🧰 Also work with**
 
-<img src="https://skillicons.dev/icons?i=js,ts,py&perline=8" alt="other"/>
+<img src="https://skillicons.dev/icons?i=js,py,ts&perline=8" alt="other"/>
 
 </div>
 <!--END_TECH-->
@@ -148,7 +148,7 @@ int main(void) {
 <!--START_RECENT-->
 | Repository | Description | Language | ⭐ | Updated |
 |---|---|---|---|---|
-| [**TRackRS**](https://github.com/Saad-programmer/TRackRS) | — | C++ ⚙️ | 0 | 2026-11-12 |
+| [**TRackRS**](https://github.com/Saad-programmer/TRackRS) | — | C++ ⚙️ | 0 | 2026-11-13 |
 | [**TP_AUTOMATE**](https://github.com/Saad-programmer/TP_AUTOMATE) | — | C ⚙️ | 0 | 2026-11-12 |
 | [**Compilers**](https://github.com/Saad-programmer/Compilers) | — | C ⚙️ | 0 | 2026-11-04 |
 | [**Red_Black_TREE**](https://github.com/Saad-programmer/Red_Black_TREE) | — | C++ ⚙️ | 0 | 2026-11-04 |
