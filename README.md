@@ -76,7 +76,7 @@ int main(void) {
 <!--START_STATS-->
 <div align="center">
 
-<img src="https://img.shields.io/badge/Public%20Repos-103-8B5CF6?style=for-the-badge&labelColor=0D1117" alt="Public Repos"/> <img src="https://img.shields.io/badge/C%20/%20C++%20Repos-28-00599C?style=for-the-badge&labelColor=0D1117" alt="C / C++ Repos"/> <img src="https://img.shields.io/badge/Systems%20Code-52%-EC4899?style=for-the-badge&labelColor=0D1117" alt="Systems Code"/> <img src="https://img.shields.io/badge/Main%20Language-C-22C55E?style=for-the-badge&labelColor=0D1117" alt="Main Language"/> <img src="https://img.shields.io/badge/Stars-3-F59E0B?style=for-the-badge&labelColor=0D1117" alt="Stars"/>
+<img src="https://img.shields.io/badge/Public%20Repos-104-8B5CF6?style=for-the-badge&labelColor=0D1117" alt="Public Repos"/> <img src="https://img.shields.io/badge/C%20/%20C++%20Repos-28-00599C?style=for-the-badge&labelColor=0D1117" alt="C / C++ Repos"/> <img src="https://img.shields.io/badge/Systems%20Code-52%-EC4899?style=for-the-badge&labelColor=0D1117" alt="Systems Code"/> <img src="https://img.shields.io/badge/Main%20Language-C-22C55E?style=for-the-badge&labelColor=0D1117" alt="Main Language"/> <img src="https://img.shields.io/badge/Stars-3-F59E0B?style=for-the-badge&labelColor=0D1117" alt="Stars"/>
 
 </div>
 <!--END_STATS-->
@@ -148,11 +148,11 @@ int main(void) {
 <!--START_RECENT-->
 | Repository | Description | Language | ⭐ | Updated |
 |---|---|---|---|---|
+| [**TrackRS_Officiel**](https://github.com/Saad-programmer/TrackRS_Officiel) | — | Python | 0 | 2026-11-16 |
+| [**AtlasOS**](https://github.com/Saad-programmer/AtlasOS) | — | — | 0 | 2026-11-16 |
 | [**TRackRS**](https://github.com/Saad-programmer/TRackRS) | — | C++ ⚙️ | 0 | 2026-11-15 |
 | [**Red_Black_TREE**](https://github.com/Saad-programmer/Red_Black_TREE) | — | C++ ⚙️ | 0 | 2026-11-13 |
 | [**TP_AUTOMATE**](https://github.com/Saad-programmer/TP_AUTOMATE) | — | C ⚙️ | 0 | 2026-11-12 |
-| [**Compilers**](https://github.com/Saad-programmer/Compilers) | — | C ⚙️ | 0 | 2026-11-04 |
-| [**TrackRS_Officiel**](https://github.com/Saad-programmer/TrackRS_Officiel) | — | Python | 0 | 2026-11-02 |
 <!--END_RECENT-->
 
 ---
