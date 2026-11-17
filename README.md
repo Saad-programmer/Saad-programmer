@@ -76,7 +76,7 @@ int main(void) {
 <!--START_STATS-->
 <div align="center">
 
-<img src="https://img.shields.io/badge/Public%20Repos-104-8B5CF6?style=for-the-badge&labelColor=0D1117" alt="Public Repos"/> <img src="https://img.shields.io/badge/C%20/%20C++%20Repos-28-00599C?style=for-the-badge&labelColor=0D1117" alt="C / C++ Repos"/> <img src="https://img.shields.io/badge/Systems%20Code-52%-EC4899?style=for-the-badge&labelColor=0D1117" alt="Systems Code"/> <img src="https://img.shields.io/badge/Main%20Language-C-22C55E?style=for-the-badge&labelColor=0D1117" alt="Main Language"/> <img src="https://img.shields.io/badge/Stars-3-F59E0B?style=for-the-badge&labelColor=0D1117" alt="Stars"/>
+<img src="https://img.shields.io/badge/Public%20Repos-105-8B5CF6?style=for-the-badge&labelColor=0D1117" alt="Public Repos"/> <img src="https://img.shields.io/badge/C%20/%20C++%20Repos-29-00599C?style=for-the-badge&labelColor=0D1117" alt="C / C++ Repos"/> <img src="https://img.shields.io/badge/Systems%20Code-53%-EC4899?style=for-the-badge&labelColor=0D1117" alt="Systems Code"/> <img src="https://img.shields.io/badge/Main%20Language-C-22C55E?style=for-the-badge&labelColor=0D1117" alt="Main Language"/> <img src="https://img.shields.io/badge/Stars-3-F59E0B?style=for-the-badge&labelColor=0D1117" alt="Stars"/>
 
 </div>
 <!--END_STATS-->
@@ -90,13 +90,13 @@ int main(void) {
 <!--START_FOCUS-->
 | Language | Repos | Share | |
 |---|---:|---:|---|
-| **C** ⚙️ | 18 | 29% | `██████████████████` |
-| **C++** ⚙️ | 10 | 16% | `██████████░░░░░░░░` |
+| **C** ⚙️ | 19 | 30% | `██████████████████` |
+| **C++** ⚙️ | 10 | 16% | `█████████░░░░░░░░░` |
 | **Assembly** ⚙️ | 2 | 3% | `██░░░░░░░░░░░░░░░░` |
 | **Makefile** ⚙️ | 2 | 3% | `██░░░░░░░░░░░░░░░░` |
 | **Go** ⚙️ | 1 | 2% | `█░░░░░░░░░░░░░░░░░` |
-| **JavaScript** | 16 | 25% | `████████████████░░` |
-| **TypeScript** | 8 | 13% | `████████░░░░░░░░░░` |
+| **JavaScript** | 16 | 25% | `███████████████░░░` |
+| **TypeScript** | 8 | 12% | `████████░░░░░░░░░░` |
 | **PHP** | 3 | 5% | `███░░░░░░░░░░░░░░░` |
 
 <sub>⚙️ = systems / low-level language. Ranked by number of repositories; CSS and HTML are excluded on purpose.</sub>
@@ -113,7 +113,7 @@ int main(void) {
 
 **⚙️ Systems & low-level core**
 
-<img src="https://skillicons.dev/icons?i=cmake,c,cpp,asm,bash,linux,git&perline=8" alt="systems"/>
+<img src="https://skillicons.dev/icons?i=cmake,cpp,c,asm,bash,linux,git&perline=8" alt="systems"/>
 
 **🧰 Also work with**
 
@@ -135,8 +135,8 @@ int main(void) {
 <a href="https://github.com/Saad-programmer/GTK-Bekhocha"><img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=Saad-programmer&repo=GTK-Bekhocha&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=EC4899" alt="GTK-Bekhocha"/></a>
 <a href="https://github.com/Saad-programmer/GtkFunctions"><img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=Saad-programmer&repo=GtkFunctions&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=EC4899" alt="GtkFunctions"/></a>
 <a href="https://github.com/Saad-programmer/GTKFinalVers"><img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=Saad-programmer&repo=GTKFinalVers&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=EC4899" alt="GTKFinalVers"/></a>
+<a href="https://github.com/Saad-programmer/TP5-Analyse_Syntaxique"><img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=Saad-programmer&repo=TP5-Analyse_Syntaxique&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=EC4899" alt="TP5-Analyse_Syntaxique"/></a>
 <a href="https://github.com/Saad-programmer/TRackRS"><img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=Saad-programmer&repo=TRackRS&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=EC4899" alt="TRackRS"/></a>
-<a href="https://github.com/Saad-programmer/Red_Black_TREE"><img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=Saad-programmer&repo=Red_Black_TREE&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=EC4899" alt="Red_Black_TREE"/></a>
 
 </div>
 <!--END_PROJECTS-->
@@ -148,11 +148,11 @@ int main(void) {
 <!--START_RECENT-->
 | Repository | Description | Language | ⭐ | Updated |
 |---|---|---|---|---|
+| [**AtlasOS**](https://github.com/Saad-programmer/AtlasOS) | — | — | 0 | 2026-11-17 |
+| [**TP5-Analyse_Syntaxique**](https://github.com/Saad-programmer/TP5-Analyse_Syntaxique) | — | C ⚙️ | 0 | 2026-11-17 |
 | [**TrackRS_Officiel**](https://github.com/Saad-programmer/TrackRS_Officiel) | — | Python | 0 | 2026-11-16 |
-| [**AtlasOS**](https://github.com/Saad-programmer/AtlasOS) | — | — | 0 | 2026-11-16 |
 | [**TRackRS**](https://github.com/Saad-programmer/TRackRS) | — | C++ ⚙️ | 0 | 2026-11-15 |
 | [**Red_Black_TREE**](https://github.com/Saad-programmer/Red_Black_TREE) | — | C++ ⚙️ | 0 | 2026-11-13 |
-| [**TP_AUTOMATE**](https://github.com/Saad-programmer/TP_AUTOMATE) | — | C ⚙️ | 0 | 2026-11-12 |
 <!--END_RECENT-->
 
 ---
@@ -160,12 +160,12 @@ int main(void) {
 ## ⚡ &nbsp;Latest Activity
 
 <!--START_ACTIVITY-->
+- 🔀 Opened a pull request in [Saad-programmer/AtlasOS](https://github.com/Saad-programmer/AtlasOS) · `2026-11-17`
 - ⬆️ Pushed 1+ commit(s) to [Saad-programmer/TRackRS](https://github.com/Saad-programmer/TRackRS) · `2026-11-13`
 - ⬆️ Pushed 1+ commit(s) to [Saad-programmer/Red_Black_TREE](https://github.com/Saad-programmer/Red_Black_TREE) · `2026-11-13`
 - ⬆️ Pushed 1+ commit(s) to [Saad-programmer/TRackRS](https://github.com/Saad-programmer/TRackRS) · `2026-11-12`
 - ⬆️ Pushed 1+ commit(s) to [Saad-programmer/TRackRS](https://github.com/Saad-programmer/TRackRS) · `2026-11-11`
 - ⬆️ Pushed 1+ commit(s) to [Saad-programmer/TRackRS](https://github.com/Saad-programmer/TRackRS) · `2026-11-08`
-- ⬆️ Pushed 1+ commit(s) to [Saad-programmer/TRackRS](https://github.com/Saad-programmer/TRackRS) · `2026-11-03`
 <!--END_ACTIVITY-->
 
 ---
