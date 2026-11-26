@@ -76,7 +76,7 @@ int main(void) {
 <!--START_STATS-->
 <div align="center">
 
-<img src="https://img.shields.io/badge/Public%20Repos-105-8B5CF6?style=for-the-badge&labelColor=0D1117" alt="Public Repos"/> <img src="https://img.shields.io/badge/C%20/%20C++%20Repos-30-00599C?style=for-the-badge&labelColor=0D1117" alt="C / C++ Repos"/> <img src="https://img.shields.io/badge/Systems%20Code-54%-EC4899?style=for-the-badge&labelColor=0D1117" alt="Systems Code"/> <img src="https://img.shields.io/badge/Main%20Language-C-22C55E?style=for-the-badge&labelColor=0D1117" alt="Main Language"/> <img src="https://img.shields.io/badge/Stars-3-F59E0B?style=for-the-badge&labelColor=0D1117" alt="Stars"/>
+<img src="https://img.shields.io/badge/Public%20Repos-106-8B5CF6?style=for-the-badge&labelColor=0D1117" alt="Public Repos"/> <img src="https://img.shields.io/badge/C%20/%20C++%20Repos-30-00599C?style=for-the-badge&labelColor=0D1117" alt="C / C++ Repos"/> <img src="https://img.shields.io/badge/Systems%20Code-53%-EC4899?style=for-the-badge&labelColor=0D1117" alt="Systems Code"/> <img src="https://img.shields.io/badge/Main%20Language-C-22C55E?style=for-the-badge&labelColor=0D1117" alt="Main Language"/> <img src="https://img.shields.io/badge/Stars-3-F59E0B?style=for-the-badge&labelColor=0D1117" alt="Stars"/>
 
 </div>
 <!--END_STATS-->
@@ -90,13 +90,13 @@ int main(void) {
 <!--START_FOCUS-->
 | Language | Repos | Share | |
 |---|---:|---:|---|
-| **C** ⚙️ | 20 | 31% | `██████████████████` |
+| **C** ⚙️ | 20 | 30% | `██████████████████` |
 | **C++** ⚙️ | 10 | 15% | `█████████░░░░░░░░░` |
 | **Assembly** ⚙️ | 2 | 3% | `██░░░░░░░░░░░░░░░░` |
 | **Makefile** ⚙️ | 2 | 3% | `██░░░░░░░░░░░░░░░░` |
 | **Go** ⚙️ | 1 | 2% | `█░░░░░░░░░░░░░░░░░` |
-| **JavaScript** | 16 | 25% | `██████████████░░░░` |
-| **TypeScript** | 8 | 12% | `███████░░░░░░░░░░░` |
+| **JavaScript** | 16 | 24% | `██████████████░░░░` |
+| **TypeScript** | 9 | 14% | `████████░░░░░░░░░░` |
 | **PHP** | 3 | 5% | `███░░░░░░░░░░░░░░░` |
 
 <sub>⚙️ = systems / low-level language. Ranked by number of repositories; CSS and HTML are excluded on purpose.</sub>
@@ -117,7 +117,7 @@ int main(void) {
 
 **🧰 Also work with**
 
-<img src="https://skillicons.dev/icons?i=js,py,ts&perline=8" alt="other"/>
+<img src="https://skillicons.dev/icons?i=ts,js,py&perline=8" alt="other"/>
 
 </div>
 <!--END_TECH-->
@@ -148,11 +148,11 @@ int main(void) {
 <!--START_RECENT-->
 | Repository | Description | Language | ⭐ | Updated |
 |---|---|---|---|---|
+| [**XPLOREback**](https://github.com/Saad-programmer/XPLOREback) | — | TypeScript | 0 | 2026-11-25 |
 | [**AtlasOS**](https://github.com/Saad-programmer/AtlasOS) | — | C ⚙️ | 0 | 2026-11-21 |
 | [**TP5-Analyse_Syntaxique**](https://github.com/Saad-programmer/TP5-Analyse_Syntaxique) | — | C ⚙️ | 0 | 2026-11-17 |
 | [**TrackRS_Officiel**](https://github.com/Saad-programmer/TrackRS_Officiel) | — | Python | 0 | 2026-11-16 |
 | [**TRackRS**](https://github.com/Saad-programmer/TRackRS) | — | C++ ⚙️ | 0 | 2026-11-15 |
-| [**Red_Black_TREE**](https://github.com/Saad-programmer/Red_Black_TREE) | — | C++ ⚙️ | 0 | 2026-11-13 |
 <!--END_RECENT-->
 
 ---
